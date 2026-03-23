@@ -2,28 +2,25 @@
 <html>
 <head>
   <style>
-    body {
-      background-color: #00ff0d;
-      color: #e0e0e0;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #ff0000;
-    }
-    .block {
-      overflow: hidden;
-      margin: 20px 10px;
-      min-height: 150px;
-    }
-    .block img {
-      width: 200px;
-    }
-    .left img  { float: left;  margin-right: 15px; }
-    .right img { float: right; margin-left: 15px; }
-    .right p   { text-align: right; }
-  </style>
+  <style>
+  .block {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 10px;
+    min-height: 150px;
+    gap: 15px;
+  }
+  .block img {
+    width: 200px;
+    flex-shrink: 0;
+  }
+  .right {
+    flex-direction: row-reverse;
+  }
+  .right p {
+    text-align: right;
+  }
+</style>
 </head>
 <body>
 
